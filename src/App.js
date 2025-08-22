@@ -20,6 +20,7 @@ import DoctorProfile from './pages/DoctorProfile';
 import PatientDashboard from './pages/dashboard/PatientDashboard';
 import DoctorDashboard from './pages/dashboard/DoctorDashboard';
 import Appointments from './pages/dashboard/Appointments';
+import Messaging from './pages/Messaging';
 import NotFound from './pages/NotFound';
 
 // Context
@@ -100,6 +101,8 @@ function App() {
                   </DoctorRoute>
                 } />
                 <Route path="appointments" element={<Appointments />} />
+                <Route path="messages" element={<Messaging />} />
+                <Route path="messages/:chatId" element={<Messaging />} />
               </Route>
 
               {/* 404 route */}
